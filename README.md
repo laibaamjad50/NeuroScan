@@ -1,7 +1,7 @@
 # NeuroScan — Brain Tumor MRI Classification
 
 **Group:** Kainat Asghar (23L-0687) | Laiba Amjad (23L-0642) | Mania Ali (23L-0876)
-**Course:** Machine Learning · FAST-NUCES, Lahore
+**Course:** DataScience · FAST-NUCES, Lahore
 **Current status:** Phase 1 complete (data cleaning, EDA, insights, preprocessing). Modelling is Phase 2.
 
 ---
