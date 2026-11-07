@@ -1,0 +1,52 @@
+{
+  "img_size": [
+    224,
+    224
+  ],
+  "channels": 1,
+  "pixel_scale": "divide by 255",
+  "train_mean": 0.1748747442650367,
+  "train_std": 0.19525450660115085,
+  "classes": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "class_to_idx": {
+    "glioma": 0,
+    "meningioma": 1,
+    "notumor": 2,
+    "pituitary": 3
+  },
+  "class_weights": {
+    "0": 0.9301700984780662,
+    "1": 1.0087378640776699,
+    "2": 1.1256771397616467,
+    "3": 0.9567219152854513
+  },
+  "val_split": 0.2,
+  "seed": 42,
+  "n_raw": 7200,
+  "n_clean": 6762,
+  "counts": {
+    "train": {
+      "glioma": 1117,
+      "meningioma": 1030,
+      "notumor": 923,
+      "pituitary": 1086
+    },
+    "val": {
+      "glioma": 279,
+      "meningioma": 257,
+      "notumor": 231,
+      "pituitary": 272
+    },
+    "test": {
+      "glioma": 383,
+      "meningioma": 396,
+      "notumor": 388,
+      "pituitary": 400
+    }
+  }
+}

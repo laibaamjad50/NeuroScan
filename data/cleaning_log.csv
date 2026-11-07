@@ -1,0 +1,439 @@
+path,split,label,md5,drop_reason
+dataset/Training/glioma/Tr-gl_1057.jpg,train,glioma,10f4540429c9b593ec3323fd045553e2,near duplicate: train/test leakage
+dataset/Training/glioma/Tr-gl_1271.jpg,train,glioma,828976a28283eecb6c678b9a692d1a77,near duplicate: train/test leakage
+dataset/Training/glioma/Tr-gl_361.jpg,train,glioma,446179184ae62d9609f3d95de9b2f759,near duplicate: train/test leakage
+dataset/Training/glioma/Tr-gl_420.jpg,train,glioma,02e150917124d875d0d324717b63234d,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1044.jpg,train,meningioma,508ec8c92ef0d93996cca647608f389a,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1057.jpg,train,meningioma,7325a7aaec4719cbef102db1ce66c991,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1069.jpg,train,meningioma,d134cc2aacfba636c30a9fa60b6e7861,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1083.jpg,train,meningioma,74aae49f79d7becec6a6461d068b978c,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_109.jpg,train,meningioma,5523b18a36e7a739bcf83d444c5d8216,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1091.jpg,train,meningioma,8753a3c9f99245feb8615e3d8c98c26a,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_110.jpg,train,meningioma,af3de6688114137f2269bfcc33972823,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1110.jpg,train,meningioma,fc432d7f9af4ed22b7b7166a0611ac5e,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1112.jpg,train,meningioma,6e59ac2beea6476a55c27682d412ef86,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1121.jpg,train,meningioma,fa6de63c10b4d2e9e3dde7ea92cab7a7,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1122.jpg,train,meningioma,465ed043450c44fd032cb2addf4834ad,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1146.jpg,train,meningioma,952fbccffb5c6dfdf5ef3623e8aa50d8,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1163.jpg,train,meningioma,3cb1d6594ea1a7391608e9bc8245529c,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1166.jpg,train,meningioma,0998f1d7c82c65530ed31227b91f2e67,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1168.jpg,train,meningioma,48d4604e4ee04865bb44d75a597b3253,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1194.jpg,train,meningioma,10b0fd4032064762679e0a27a699b83b,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1198.jpg,train,meningioma,ae6d267fc228ffe00a7cd13558e28189,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1225.jpg,train,meningioma,3d2866c22eb6d6bf1f3e4c751142b589,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1242.jpg,train,meningioma,ef4efdf1a7f3fb1b9efe30ee40525500,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_1249.jpg,train,meningioma,28288e89575a009d245c575d2c031731,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_126.jpg,train,meningioma,b4bd91a63fbf5728851decd9e867aa20,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1262.jpg,train,meningioma,5d58643818e2775a569390c4aa3c1d8d,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1274.jpg,train,meningioma,9e7c7e8d5dc30162f8c4f0c6d68aa71f,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_1286.jpg,train,meningioma,93d2af5225382cd176139b2dc79e305a,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1289.jpg,train,meningioma,d307a9fd900a43f8dfc2ce2a82f5c4a1,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1290.jpg,train,meningioma,fd90d34d5f8fb9e36e9a3a74ce51152b,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_1295.jpg,train,meningioma,9d8e2727154924c2c1f3ff8da042b850,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_131.jpg,train,meningioma,f642d06be875c343c1c498cfaa2fbd25,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_145.jpg,train,meningioma,ec00c2470c3abe13e1f53bc9aaebb6f6,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_154.jpg,train,meningioma,546d13394a216dca4e057415eee7468a,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_158.jpg,train,meningioma,47452c1ea25eed994f73362f40904be4,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_167.jpg,train,meningioma,03ed7aa5155e3b6bbf657de60514ada8,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_19.jpg,train,meningioma,123493c6dc54b565bdf87f58bd4686a2,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_200.jpg,train,meningioma,0017a277c3504d5ca435c69dacb70031,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_205.jpg,train,meningioma,da3c601dae40626a6b2ea828539814d8,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_219.jpg,train,meningioma,832c3e0243e8fafe4313d899e233285d,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_238.jpg,train,meningioma,c65ca5e91472afeec9c32c45b2cc8e94,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_239.jpg,train,meningioma,8cc51b538c45c1f7b870335d6e32dbeb,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_245.jpg,train,meningioma,5ac635ab3e61f1897b1e4188fdc1c3f2,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_268.jpg,train,meningioma,9120f19e559d9f509aa873b5d9b46909,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_3.jpg,train,meningioma,a277d4f219a26aed063ae523f21b9f16,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_330.jpg,train,meningioma,94851083e65e9740bdce56b434bacc79,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_331.jpg,train,meningioma,64ef8e768d1740cfbf5eea4e11faeb87,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_339.jpg,train,meningioma,af3a4cf5d54bd454b733bfe3d2177b4a,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_36.jpg,train,meningioma,45460610c17c35e7baf9d13e3d7d54ac,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_373.jpg,train,meningioma,fab4d7c5fc015d993ba24e7687f2b661,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_404.jpg,train,meningioma,12749ee3aa08e216a88d7ed4490abed8,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_421.jpg,train,meningioma,641d342f95bc6dd8245321827ea8a47d,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_424.jpg,train,meningioma,cf5d24b7728e7d42fa0bc85b7b1ed23b,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_432.jpg,train,meningioma,333ca271271562e025951545e76a8b0b,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_437.jpg,train,meningioma,d357e7dfe4d18bdcc1f7a745e9e84549,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_450.jpg,train,meningioma,8687e7951d0238144013c737efa3b707,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_453.jpg,train,meningioma,be39df2f507c7f2b8aa15b35efb8db4c,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_458.jpg,train,meningioma,bcfe5da82e0e26fa012aee044c72752c,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_464.jpg,train,meningioma,e9fe1389c9e1e80933dffe5f2420dbe4,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_465.jpg,train,meningioma,bd589167f6ddb9d005f4ec9d4ce77123,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_468.jpg,train,meningioma,39aa0b7a41c1da85ceb2be85bac58ec1,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_472.jpg,train,meningioma,deda53fba5fff5371017b18f1f85b360,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_479.jpg,train,meningioma,0cea67355ed9fd0c9bd1c8db412fe71f,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_486.jpg,train,meningioma,6d9a5457d22081667ee3ece050a10d06,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_489.jpg,train,meningioma,fe7b3a2c74be0c970c4a514d7f6bee5f,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_497.jpg,train,meningioma,04905e66c59d8c32359598bbaf766723,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_50.jpg,train,meningioma,6970ea1e4ca82e1f2093bc3369a67d78,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_52.jpg,train,meningioma,5e83a717547a6ca6d93fceec38fa5895,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_530.jpg,train,meningioma,b77ae03ed117e3771edccacd35959ae4,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_532.jpg,train,meningioma,ceb4361f4ba2f0ee12470a037bc37212,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_534.jpg,train,meningioma,af3a4cf5d54bd454b733bfe3d2177b4a,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_543.jpg,train,meningioma,ab525628d00898aa6b1088d9c1d5a785,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_553.jpg,train,meningioma,4952912db3852a6eb65ebac7e708af0f,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_557.jpg,train,meningioma,ee94e72dcadb6520681568914667ea78,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_561.jpg,train,meningioma,333ca271271562e025951545e76a8b0b,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_583.jpg,train,meningioma,bbaa6720b0aa032be627af17f603de4e,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_597.jpg,train,meningioma,46b82306828adb9ceb02045020147782,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_616.jpg,train,meningioma,0047debbf9ede24ff8c7a2517cb27164,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_639.jpg,train,meningioma,51669f2b96f8a273dc894f7e959fe95c,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_661.jpg,train,meningioma,09bd38f7c50e865d4220c345612089fb,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_666.jpg,train,meningioma,97d3a1d6b6648be75e2f3eb132f16e75,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_678.jpg,train,meningioma,fa3c485c004ca9f690771d7f447b39a4,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_684.jpg,train,meningioma,33cf7be1f0f6d5e7cc54064875ffef28,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_688.jpg,train,meningioma,41fc6c383287f88162c8196ae30cc6fc,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_706.jpg,train,meningioma,1abf1f6791ad06b291c641afb3387d4b,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_714.jpg,train,meningioma,f2fda57f000c42ab14bb61db2346ea34,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_715.jpg,train,meningioma,81d75ed803855c42170b2350fd76c5b7,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_717.jpg,train,meningioma,31801f8fb7b8f28b4c4df67356e80c54,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_726.jpg,train,meningioma,ab525628d00898aa6b1088d9c1d5a785,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_737.jpg,train,meningioma,62d2f62f5ecf630df1e45df2915b5d8b,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_740.jpg,train,meningioma,eeb2140ff1a1a1f692d0997eedffa3d1,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_753.jpg,train,meningioma,45231709563f713e8e70fd3578239209,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_758.jpg,train,meningioma,200f4278ce81be3b51d84df85c16ff1c,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_760.jpg,train,meningioma,48c2019d5697b897ee8549f2a4383d32,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_771.jpg,train,meningioma,04fd122ee1cd624b4caa8dc3756e1bf0,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_776.jpg,train,meningioma,7b5a4c468fb96a2a88022a453c5b7e11,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_799.jpg,train,meningioma,cbdb9a5b45202d5dd374c92b252dac8c,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_824.jpg,train,meningioma,b66d2a622c461b978e51d48171ae2980,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_836.jpg,train,meningioma,a501e6ea3748d3aebea8e8735268ec5b,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_845.jpg,train,meningioma,bc13bdda7abe567471c96696ca0a85ea,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_846.jpg,train,meningioma,b41f5c6d2d27eaf8ba9059884dfaf150,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_86.jpg,train,meningioma,af3a4cf5d54bd454b733bfe3d2177b4a,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_865.jpg,train,meningioma,73cd656e3f62e426c4ec212d9d69113f,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_877.jpg,train,meningioma,ad837e2c7e23d168c1d8c4ff78daed0b,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_880.jpg,train,meningioma,3f41c61e72d0553aef61720f9b081bd8,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_889.jpg,train,meningioma,c3aa5bcdbe44fc74833b7bd86b8d076e,exact duplicate: duplicate
+dataset/Training/meningioma/Tr-me_897.jpg,train,meningioma,1f371f1b943ef9e31b59d4bc30b5ba09,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_905.jpg,train,meningioma,961e7d02591f7c946cf82e97ce45f1c7,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_920.jpg,train,meningioma,1e9c82b69946d55ab098429eeed6a3f9,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_946.jpg,train,meningioma,572a36069412ab6da31d9cc3b14a9bd9,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_954.jpg,train,meningioma,a6217c69806da4eac0493ed430a49ce2,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_957.jpg,train,meningioma,dc3df669de55c11542df0a986ba3e1e8,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_960.jpg,train,meningioma,3a185692ee03eb1854bd2a96b3cad94d,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_962.jpg,train,meningioma,7fc7196619f304d6fd8586f417fff313,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_965.jpg,train,meningioma,94638f4d66661073aeb9475d41f60bdf,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_980.jpg,train,meningioma,a1f69fb7d3a86625904557c5f694be1f,near duplicate: train/test leakage
+dataset/Training/meningioma/Tr-me_99.jpg,train,meningioma,92f98ce99049e0f45368950818983be9,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1004.jpg,train,notumor,e4919b2d20d5aabc8b17d194cd10ac9b,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1017.jpg,train,notumor,8bbc73bcf90ce43f04fb691542b999a8,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_105.jpg,train,notumor,71d0f7ccc4fdf4cffccebc64b18c3c9d,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1052.jpg,train,notumor,f5d1e179b70c7b29ddaaf48bacc6a370,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1076.jpg,train,notumor,5ec0a4d1695e240a8899ce9dd59c4b18,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_108.jpg,train,notumor,bd59d0d9c33dd953aa066d1dd0f0ab2c,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1082.jpg,train,notumor,54ca08fdf8994d2f212cf9d47346d419,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_109.jpg,train,notumor,d9c32d64bae1e0350522351c6a7cea0b,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1096.jpg,train,notumor,d6b4063d53e85177a7ad7ab80666be23,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1102.jpg,train,notumor,b74bd04ac8f7517792ba6a5db3cf2b22,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1134.jpg,train,notumor,1f6dfa12ce7c3c884d7e2a5a9b802e65,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1136.jpg,train,notumor,73c244cbac8fbf41713f24a54c4deff8,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1138.jpg,train,notumor,96b9cc174a6368cc1d48fd2eda227521,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1144.jpg,train,notumor,e8d6da7fa9d7da189be935063c449481,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1158.jpg,train,notumor,78c6f2102e0ba73c47a344d2880b4071,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1178.jpg,train,notumor,24e83deaaae9ab0f15565690e474f5fc,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1183.jpg,train,notumor,d9c32d64bae1e0350522351c6a7cea0b,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1188.jpg,train,notumor,d0ba529e618ee5e2e8bf0f44a9a103c3,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1195.jpg,train,notumor,d59b82dd5c78da493226d3f9d8adb54c,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1209.jpg,train,notumor,7fcb0db855729227a4bed590bba399c7,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_121.jpg,train,notumor,46bdd15e88da99beefcb999aea360457,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1217.jpg,train,notumor,64fb0c0d8db70eb7879cff1dafb6af4a,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1228.jpg,train,notumor,7e10aa532c597eb3823edaafa9ee81ae,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1232.jpg,train,notumor,c998853fe6004a6ffe594f85b47f3764,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1234.jpg,train,notumor,e450fb2bea94fad366ddebacbe26a4bb,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1235.jpg,train,notumor,1829d716613d6d3022da2f82368071ae,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1237.jpg,train,notumor,2c86bf24e7fc1936e53f92d35e7512f4,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1244.jpg,train,notumor,19e1c11270a5105459a8f52090262d4a,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1253.jpg,train,notumor,c00ff93d39654b9bd8772a3a49d91dfd,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1265.jpg,train,notumor,24e83deaaae9ab0f15565690e474f5fc,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1268.jpg,train,notumor,10800f19c3ed55315a78dfd8e17fae81,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1272.jpg,train,notumor,8f27ea36721a45b6ccba50fb3dbcea13,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1277.jpg,train,notumor,ffadd2c5a5b24fe3a0bad45d064b4191,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_129.jpg,train,notumor,25faac854458973ea07975165f80c035,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1290.jpg,train,notumor,55bc232802b2c8122e875919c6ccbcfa,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1296.jpg,train,notumor,70eed1d99bb5a74fbe883f211e8da993,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1304.jpg,train,notumor,06c825df4141e9c79e23dfa4af3486ca,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1306.jpg,train,notumor,c935e37b5a06c84dab5f2c95ddb94d63,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1316.jpg,train,notumor,72622502c4407a4cbdc8141151f0e585,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1319.jpg,train,notumor,2a24c37fe4b7a2244a110e1b0f759a64,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1320.jpg,train,notumor,84482e0ddc1ea348e987987c7d9252dd,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1325.jpg,train,notumor,bd99ed2eee8ca651ea8a27d711bb9eb8,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1326.jpg,train,notumor,9a96042ca9379abbdb7be132cb833221,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_133.jpg,train,notumor,547162f38043fe5cf612896adbaa193e,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1336.jpg,train,notumor,208670d4d74e93c59795a71a6e8edaf1,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1339.jpg,train,notumor,e8cf02f5f074423443117f693bef9a33,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1349.jpg,train,notumor,c34bb3e1e11a907b77319cca81944657,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_1356.jpg,train,notumor,dfb3989d7b0ae8e50d48e2ac0e86d47c,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1360.jpg,train,notumor,1829d716613d6d3022da2f82368071ae,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1380.jpg,train,notumor,4203b88f2ff81d366a5a4a77674314f6,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1383.jpg,train,notumor,e8987ab719f704faf79a88816c763226,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1385.jpg,train,notumor,e0e9fee7b1fe0b3a4fc4af3189e2dc1f,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1389.jpg,train,notumor,edff99b0528bbdb5f2340b24dddebaf7,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1392.jpg,train,notumor,19e1c11270a5105459a8f52090262d4a,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_1396.jpg,train,notumor,a09a3ac86b9f48b057a9e9da476b1fb8,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_1400.jpg,train,notumor,7c17b4d2dae9f464590fd5ede35aa935,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_143.jpg,train,notumor,2c3f26cee58e078bc32ac1d9d5dbc807,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_145.jpg,train,notumor,c7a0fd941cba81fb0c7a96bfbd691042,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_147.jpg,train,notumor,7a56fd2c3caa55b420014c3de8cf6ff4,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_154.jpg,train,notumor,9eb9f2c929d940f7333441cf7301f205,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_156.jpg,train,notumor,75378ac81f02855ccf2b17a8492f3941,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_165.jpg,train,notumor,208670d4d74e93c59795a71a6e8edaf1,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_17.jpg,train,notumor,92d345cb0e551329cb0ab0041b1d531f,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_175.jpg,train,notumor,ddb6cdd61f707b6230456bf7485648ca,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_176.jpg,train,notumor,ed1c9f00106192dea2c17d0c06859f7a,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_177.jpg,train,notumor,1b02f208a93586ed1e4c017ed4103352,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_194.jpg,train,notumor,fe2231f523d6d1cabd4670f11b829773,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_195.jpg,train,notumor,6aebc01d66126c7e6307bfdf938e11e8,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_211.jpg,train,notumor,ba0bb0472cea6599718e4c5e4ef4919d,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_217.jpg,train,notumor,9fc3b080c7fe9c1d3927b877b975b5f1,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_219.jpg,train,notumor,fe2231f523d6d1cabd4670f11b829773,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_224.jpg,train,notumor,0cc82102690c7ecbba7b211e9dca4da6,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_23.jpg,train,notumor,6e6a713e4973eedc2c1a71712aa23fd9,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_230.jpg,train,notumor,bbe4e3817fcf574daf45adf8a2915106,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_232.jpg,train,notumor,0cc82102690c7ecbba7b211e9dca4da6,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_235.jpg,train,notumor,86c4da692caccbe369acf7c886626083,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_245.jpg,train,notumor,b2545b21f51c996ff97cf0b2d1664cb7,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_247.jpg,train,notumor,55059c3698134cd82579dcff019f52e4,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_255.jpg,train,notumor,632120a6491595c8f2646222e132159e,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_273.jpg,train,notumor,eaed62da90b11d4efc075a06ac31932d,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_275.jpg,train,notumor,bdd44deccd89e3fbb600afd18878a9ac,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_281.jpg,train,notumor,55bc232802b2c8122e875919c6ccbcfa,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_288.jpg,train,notumor,e42b3eea55b05907ab362e2789dc2afa,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_29.jpg,train,notumor,0cc82102690c7ecbba7b211e9dca4da6,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_290.jpg,train,notumor,0961a3d77693e06c0448cf32545399be,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_308.jpg,train,notumor,24e83deaaae9ab0f15565690e474f5fc,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_314.jpg,train,notumor,e71ce456b9d3b690feda282db3caa5d9,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_321.jpg,train,notumor,5dfd13159102cb8326e912736818ff42,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_322.jpg,train,notumor,30e12e819877a94fab2aa35b100ae645,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_330.jpg,train,notumor,78c6f2102e0ba73c47a344d2880b4071,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_341.jpg,train,notumor,fdea69d8f1eaf6ad0933a4e4ba3cc4f6,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_347.jpg,train,notumor,7ad8460ca454f9b05aa869952c5f1063,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_360.jpg,train,notumor,2f3fd272dbe51e1005cd30dae8aa13e1,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_362.jpg,train,notumor,f4a6f0089b53f4f15640c03704624cd7,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_371.jpg,train,notumor,d9c32d64bae1e0350522351c6a7cea0b,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_377.jpg,train,notumor,74fe56272c80bfb58202b4f7afd6df72,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_380.jpg,train,notumor,1f23dacaac228811e45af94981be031c,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_386.jpg,train,notumor,636cc44226b6c31723e02ef144d9e6d2,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_387.jpg,train,notumor,1f23dacaac228811e45af94981be031c,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_400.jpg,train,notumor,5474914546a6267f70286341ef9c9052,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_403.jpg,train,notumor,598f17c0ec4018ec17c037a6406f4945,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_410.jpg,train,notumor,75b704201c2125c4ac02a0acf836802d,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_411.jpg,train,notumor,9a96042ca9379abbdb7be132cb833221,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_412.jpg,train,notumor,ddc6fd51d45cb3a708c10fb921485ce9,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_42.jpg,train,notumor,5ac9df6391579a6e94698342330b0489,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_420.jpg,train,notumor,4c8a57ca4fda6790732ae397b23acfa3,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_43.jpg,train,notumor,570dac1fc1d035ab025b3132a5b653ae,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_430.jpg,train,notumor,e450fb2bea94fad366ddebacbe26a4bb,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_44.jpg,train,notumor,ce0edd8064f376cf8360d63c4d9ebdd8,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_448.jpg,train,notumor,bdad00de17000453a6986b7064548f21,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_454.jpg,train,notumor,1e98f507c83df39e1aefd1e4c2724d7d,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_463.jpg,train,notumor,f026747e5401d8a361e0566ad9166b5d,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_465.jpg,train,notumor,37dfdeb5735ee853bd551e6e97fef1f0,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_469.jpg,train,notumor,2a8d44e3bcaaa7429c99e8af2a6fd934,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_472.jpg,train,notumor,665bf16ea1489fb798ee0dd3acaade79,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_475.jpg,train,notumor,72622502c4407a4cbdc8141151f0e585,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_48.jpg,train,notumor,e5437347d710af8e850b85b3680e7f9b,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_480.jpg,train,notumor,39ac4c135f71aa21f1e251269560f80d,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_490.jpg,train,notumor,c07e4455eaba1aa3be49247aa6129b90,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_492.jpg,train,notumor,bc7e75fa5d8cff54b445b79275272d54,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_494.jpg,train,notumor,24e83deaaae9ab0f15565690e474f5fc,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_5.jpg,train,notumor,f4b4f54022e5d07d1cfecf6868492299,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_500.jpg,train,notumor,2111debea64350099cb45d90c9954294,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_503.jpg,train,notumor,30833b6b027eb1ca54cdd37ae88213e6,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_508.jpg,train,notumor,914304bcaa212f6c1207ecf721a2bcf7,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_516.jpg,train,notumor,b9504d1f84629a48b2de81a52aa0468a,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_534.jpg,train,notumor,ff0139122892f719f48b23fb732bed05,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_536.jpg,train,notumor,196fee6ff00bfc8de983dfa2460dbd5f,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_538.jpg,train,notumor,464636a79cf4d95cf5840cfe614bfed2,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_543.jpg,train,notumor,568236b6d5966f4a23af6b3784bd29a5,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_544.jpg,train,notumor,c2b260033b80845f3c6fc9ade495a5a1,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_545.jpg,train,notumor,7c3b0337ad375d94ab3ccfcdba51e411,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_550.jpg,train,notumor,d4213cadb7fdc260baf35de0ef3072bd,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_559.jpg,train,notumor,79ee916b7b7037c4e54832658aa2848a,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_56.jpg,train,notumor,f6a666f3aad6223c98e59c677b06310c,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_563.jpg,train,notumor,0f300475b4cf6799922173042b8d1d42,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_564.jpg,train,notumor,b71e64834740e5c0589d52e7145a83f0,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_565.jpg,train,notumor,382a309c1662909431e041df2e825b7e,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_569.jpg,train,notumor,c2c5423dd557bd3557a8bd8d4f359acf,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_581.jpg,train,notumor,7ce25d17c7839af995b51e5e308cbd08,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_582.jpg,train,notumor,4a22015417b3ab93cd89679e4fa22129,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_588.jpg,train,notumor,9fd7bb93bb0e52f47db21ccdc091a9fc,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_594.jpg,train,notumor,a50b5fb2a4c2fd2a9b4df80a688f4beb,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_60.jpg,train,notumor,a83cb7f08470fe605a874d75e12aec8a,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_600.jpg,train,notumor,e0e9fee7b1fe0b3a4fc4af3189e2dc1f,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_606.jpg,train,notumor,47de6b02c55fb97b1d294a9193cbf5cc,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_61.jpg,train,notumor,85eb1d4246b6f1a539a7c0aa8ff49126,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_611.jpg,train,notumor,610228d7967b27c0eade9452a8677c6b,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_612.jpg,train,notumor,a0cf78c17b7d5af66b1248afdb69a1cd,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_617.jpg,train,notumor,7ab84ada9eeadbc4f93ae1afcf38628b,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_618.jpg,train,notumor,aed2489087ed84f075641ffebe39c063,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_62.jpg,train,notumor,25faac854458973ea07975165f80c035,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_621.jpg,train,notumor,228c0c1d9f4f44edfb33e085d3e5aa42,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_626.jpg,train,notumor,1d39767cea25183914fa573a0107d307,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_63.jpg,train,notumor,8039b6fdb903c359232053b858fca09f,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_636.jpg,train,notumor,aefc8e18544fc436f74fb90128910a57,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_639.jpg,train,notumor,1b1e28388b7c7f2ad38d65480a08d6c1,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_642.jpg,train,notumor,05fe39a899414d2dab6cad25c301b32c,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_660.jpg,train,notumor,c6aa58f0d3713e5aec0cf8b373ba02e5,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_664.jpg,train,notumor,6142acdc1f1b32e31ea0f73324b5f356,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_666.jpg,train,notumor,fed0573128c8de227d47c0a84bdfe5ef,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_677.jpg,train,notumor,46187030cd69d096f561e16f2b53752e,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_69.jpg,train,notumor,ebd0a54a7b151a9578e4c27c595caffa,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_692.jpg,train,notumor,7108f7b2a94c8401f13dae47f666b4e1,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_693.jpg,train,notumor,f4b4f54022e5d07d1cfecf6868492299,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_699.jpg,train,notumor,1b2d322078b0e4fe2357333142491edd,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_716.jpg,train,notumor,67ec1b30862f64de8686b860b3a1e59a,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_720.jpg,train,notumor,b6ce0a54d799d61f77617809c5e78ef2,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_721.jpg,train,notumor,43a7b114cc14ecb127e3feb427e8a2dc,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_723.jpg,train,notumor,562cc858458ff6ea53d8532747c389ed,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_725.jpg,train,notumor,9eb9f2c929d940f7333441cf7301f205,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_73.jpg,train,notumor,f6a666f3aad6223c98e59c677b06310c,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_730.jpg,train,notumor,c00ff450511705c42d3a8273cc785de0,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_734.jpg,train,notumor,4295eee904f5e6c205b01cbae01efab6,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_738.jpg,train,notumor,bbe4e3817fcf574daf45adf8a2915106,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_747.jpg,train,notumor,5a2b03cf1973b4e0c5e18a7b439b900e,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_749.jpg,train,notumor,e89ab6994c617c31786bfff5c406d0ab,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_751.jpg,train,notumor,02e13b0f5d022f8b668a098e355a2687,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_753.jpg,train,notumor,b57daf6bdf4eba86d249368f83891067,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_755.jpg,train,notumor,961071052eb301a3e0cd452df5cfa975,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_760.jpg,train,notumor,1b0b5e95c978a932741e084838811246,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_764.jpg,train,notumor,d52e77fd0e12cfd96d437f00bce28eef,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_767.jpg,train,notumor,7108f7b2a94c8401f13dae47f666b4e1,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_771.jpg,train,notumor,f70c4bc5533e405d1ef1cbf1d41b7d46,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_772.jpg,train,notumor,86527e0ac3e48b7b73cdeb2fc2497da5,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_774.jpg,train,notumor,1383c8a62264194b6158718f2f60baec,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_778.jpg,train,notumor,2979f0422f022037f032b69fda8cbcba,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_779.jpg,train,notumor,d3692b5c51d63ded1b913019a2027789,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_780.jpg,train,notumor,beea2fac64ad938f44d12328a0914f9f,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_781.jpg,train,notumor,19e1c11270a5105459a8f52090262d4a,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_799.jpg,train,notumor,ccffd5b014d043687ba5d980285bda36,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_8.jpg,train,notumor,342b29d63e0103afbe3fab52b8536af2,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_81.jpg,train,notumor,43a7b114cc14ecb127e3feb427e8a2dc,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_810.jpg,train,notumor,3c6fa0ae2ede310bc6dc2dd7a6fbbaa3,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_817.jpg,train,notumor,06c3e21e888012e7845da47b26b742e8,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_819.jpg,train,notumor,60e765179ae22c1d69cb6c1233f17354,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_821.jpg,train,notumor,d017c4e724b25cb69d7f0b560e5f826d,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_825.jpg,train,notumor,aa86a91e84f337895ac6c95378e5cc54,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_831.jpg,train,notumor,46e6159f43133d0a4739a0f84fa10411,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_832.jpg,train,notumor,ce6001ef0d44e80eccd0e52011cb62ab,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_835.jpg,train,notumor,34c41ac2288b30b780067d5c5e03bd2d,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_839.jpg,train,notumor,b6ce0a54d799d61f77617809c5e78ef2,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_840.jpg,train,notumor,33545775c68d06694c0cd52a399584a7,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_843.jpg,train,notumor,d966ed9f01d9fac152e7a4bed63ac281,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_845.jpg,train,notumor,2a2e517ae7d77b877d6457e2aa08cd23,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_846.jpg,train,notumor,bfa696d934f47cee4a0873f972a35c21,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_851.jpg,train,notumor,f1926a7952a3e2245be16ed06c227b24,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_854.jpg,train,notumor,1829d716613d6d3022da2f82368071ae,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_861.jpg,train,notumor,47eaeaf40e9f46bb84887d028f02a76e,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_863.jpg,train,notumor,46e6159f43133d0a4739a0f84fa10411,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_864.jpg,train,notumor,6b3c032ec42efd24bdeb87534f6ce0bd,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_865.jpg,train,notumor,11118ff96dd17a149cba79f43a30ec31,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_866.jpg,train,notumor,2e793e328d071f0be0cd3a7445d15dc6,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_870.jpg,train,notumor,790287c6713dd96be2a947004d7f1779,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_872.jpg,train,notumor,4bb4e278677833186fa60a9e12178ef1,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_876.jpg,train,notumor,81e96a08a3d564cad3db79a70757849a,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_882.jpg,train,notumor,4bd4119de88ed218a00e207b45ea84c3,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_888.jpg,train,notumor,fdd4e152bdadbf2731fa4481bc41bce5,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_889.jpg,train,notumor,7f4d91f6e5c91dc0501e9d9562042f58,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_896.jpg,train,notumor,4c4bfb9135d51b7b91fa3ab26e4abd96,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_906.jpg,train,notumor,2c7025438fab31a227acfa917e126d33,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_911.jpg,train,notumor,09c70286382573b296e62475fd66d6ab,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_916.jpg,train,notumor,8d5cb4ac464ba805ec639f4c38da6191,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_918.jpg,train,notumor,7be661c7ec1d3c648894b51bb7ffdf3e,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_92.jpg,train,notumor,40881ffd0417f7d60164cbec5265be37,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_920.jpg,train,notumor,564d3b81b447a6a62883e7a8bc5476cf,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_925.jpg,train,notumor,467e1d92491f2b2d7ae13bd01f6887e7,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_93.jpg,train,notumor,b59c196cbb359e515d0a6abe39ed2256,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_930.jpg,train,notumor,b3985de17782311036e2c40e43eba428,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_931.jpg,train,notumor,e89ab6994c617c31786bfff5c406d0ab,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_935.jpg,train,notumor,342b29d63e0103afbe3fab52b8536af2,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_946.jpg,train,notumor,6495fc05280819be82ed863052127a82,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_947.jpg,train,notumor,b87cc7dfddced616844b0c0808083223,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_962.jpg,train,notumor,5392a4502bf3e1db5a84ce99a7c7acaa,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_963.jpg,train,notumor,570dac1fc1d035ab025b3132a5b653ae,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_967.jpg,train,notumor,713df8b9d91cb6721c6e2478df82fc02,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_969.jpg,train,notumor,61d0aeacb5768eca8d91ed7915c5648b,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_970.jpg,train,notumor,51a5e95616d54cea8a38a54e0dbbb73b,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_974.jpg,train,notumor,6eb93cfd63d681847b2d5f3ba975c340,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_98.jpg,train,notumor,7108f7b2a94c8401f13dae47f666b4e1,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_982.jpg,train,notumor,d7259adbaa6ae191dcb3cd7bb42af711,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_985.jpg,train,notumor,826a11ea67b9ff6782afc3b610256590,near duplicate: duplicate
+dataset/Training/notumor/Tr-no_987.jpg,train,notumor,ccc80481e9d98685cee7a40116c9a12e,near duplicate: train/test leakage
+dataset/Training/notumor/Tr-no_989.jpg,train,notumor,9fd7bb93bb0e52f47db21ccdc091a9fc,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_990.jpg,train,notumor,e83c5b3fc278777d5a563a2c45f855b1,exact duplicate: duplicate
+dataset/Training/notumor/Tr-no_995.jpg,train,notumor,0abe34033d22367d0fe55445050a6f7e,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1071.jpg,train,pituitary,51e083128ee310d25cab89a4b175624b,near duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1155.jpg,train,pituitary,0140560cc9a91abc3e62e9e1bec6c5ea,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1196.jpg,train,pituitary,45e8c308a42e1995239b2934f71bace3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1207.jpg,train,pituitary,51e083128ee310d25cab89a4b175624b,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1211.jpg,train,pituitary,e3ba2a330b921704ecae3a47624106e3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1320.jpg,train,pituitary,f99ec13fecab7561f5c978e964db0554,near duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1339.jpg,train,pituitary,e3ba2a330b921704ecae3a47624106e3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1352.jpg,train,pituitary,ca3ad7e6cd4825a0d5cff84d11757bed,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_1380.jpg,train,pituitary,ea8bd10492e003137e816400c2aeceb1,near duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_160.jpg,train,pituitary,e3ba2a330b921704ecae3a47624106e3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_195.jpg,train,pituitary,58e47a3e12d09d40c54a8672b481c175,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_261.jpg,train,pituitary,b6276f725b9a3661ea24de2d01adf881,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_306.jpg,train,pituitary,008c98403b057fc344bf0a9f2e7de6c2,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_320.jpg,train,pituitary,406052e058bc64ffed1f9c9e2b65687c,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_384.jpg,train,pituitary,6c9fee8d2f733b06b500a0ab9d0c3fd3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_397.jpg,train,pituitary,00748c6aaa5c199b07f8fa7140fc19c1,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_405.jpg,train,pituitary,37d9b2e8f32519fba8e67ef120bb343e,near duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_430.jpg,train,pituitary,05c3caea567ffd77caf79c12654b87e5,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_461.jpg,train,pituitary,72767d52cc2aad37a5cfb24ff23bb06a,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_476.jpg,train,pituitary,4e5a8e1b13dce709484145eb0ac3ce70,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_504.jpg,train,pituitary,667db113b8954435f1ceab3122f5b296,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_515.jpg,train,pituitary,7aace426ed99cbee63e3f7fb55465590,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_528.jpg,train,pituitary,72767d52cc2aad37a5cfb24ff23bb06a,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_564.jpg,train,pituitary,690f2c41084c1b8727b1c51812153004,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_634.jpg,train,pituitary,37d9b2e8f32519fba8e67ef120bb343e,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_668.jpg,train,pituitary,3665fdf79547807d98e5053427a45a98,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_698.jpg,train,pituitary,b7f875bedfac719015cc81bc888151b3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_75.jpg,train,pituitary,9ac2bb858e51e57e9652feba3728004e,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_759.jpg,train,pituitary,dcd64c030193c4b3a8a69460e4906807,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_763.jpg,train,pituitary,680022005ea0acdf17c86efc8f81b931,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_77.jpg,train,pituitary,dcd64c030193c4b3a8a69460e4906807,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_812.jpg,train,pituitary,99e0890275f773a6baa17d02fc0bdefb,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_857.jpg,train,pituitary,37467cc9d034a9213e185a0790a0a6b3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_863.jpg,train,pituitary,6c9fee8d2f733b06b500a0ab9d0c3fd3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_878.jpg,train,pituitary,37f42c6a8b3782e3fe33c00e570ad7fe,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_883.jpg,train,pituitary,05c3caea567ffd77caf79c12654b87e5,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_928.jpg,train,pituitary,37d9b2e8f32519fba8e67ef120bb343e,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_943.jpg,train,pituitary,45e8c308a42e1995239b2934f71bace3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_962.jpg,train,pituitary,15cf7ebeefbbb7e57abf759acc3af7ef,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_969.jpg,train,pituitary,b7f875bedfac719015cc81bc888151b3,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_984.jpg,train,pituitary,b612aa0d702020c3dd896f4294000a02,exact duplicate: duplicate
+dataset/Training/pituitary/Tr-pi_991.jpg,train,pituitary,51e083128ee310d25cab89a4b175624b,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_178.jpg,test,glioma,4dc9e3b56a99b7455036ca9247c82817,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_225.jpg,test,glioma,b97b35cbe4dca6de78bd673133be2007,near duplicate: duplicate
+dataset/Testing/glioma/Te-gl_228.jpg,test,glioma,270039de9ae75d069b6360f6b23c0b8b,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_238.jpg,test,glioma,cfe978f4870cfc42980c522bf749de92,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_259.jpg,test,glioma,716882598588e4671a4cb50eadfc5b88,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_272.jpg,test,glioma,845ff201c07a82cd2356769078f83eae,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_278.jpg,test,glioma,34d3fec0def3da3459c5f1596f059aef,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_29.jpg,test,glioma,caab5859588132c3ebb1fbbfa853e944,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_303.jpg,test,glioma,ee6e22476c4f669b43d82fa9f5ab2abf,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_338.jpg,test,glioma,845ff201c07a82cd2356769078f83eae,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_359.jpg,test,glioma,a580d4d2740899423c48894dba58b796,near duplicate: duplicate
+dataset/Testing/glioma/Te-gl_36.jpg,test,glioma,61388b0e333fe750b3bd0c7912846625,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_364.jpg,test,glioma,f998e6cf91b2d4ae9d464510ba184a4f,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_389.jpg,test,glioma,252314e70476470af7835cdfd70bac92,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_59.jpg,test,glioma,557074c0f2215c6453fd61461aafc59a,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_72.jpg,test,glioma,7aec05f6498b98fca1451348adec402c,exact duplicate: duplicate
+dataset/Testing/glioma/Te-gl_85.jpg,test,glioma,8e500fc5f61d6d4787016299e1ee876f,near duplicate: duplicate
+dataset/Testing/meningioma/Te-me_198.jpg,test,meningioma,784114ee48882bf1b8b7b92a559da83d,exact duplicate: duplicate
+dataset/Testing/meningioma/Te-me_235.jpg,test,meningioma,698ac9e379771e54f2dd985b1d58f8dd,exact duplicate: duplicate
+dataset/Testing/meningioma/Te-me_45.jpg,test,meningioma,6d6c9585464724be8ab0183e2c069635,near duplicate: duplicate
+dataset/Testing/meningioma/Te-me_70.jpg,test,meningioma,1db456ea3c66dc2f1856226065b601e6,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_173.jpg,test,notumor,452f101b79c45042fe485f73655d2c02,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_261.jpg,test,notumor,1c4f026757df66e0442aa1589a5fe424,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_262.jpg,test,notumor,19367f7c669c639e18ab14257ab61d23,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_274.jpg,test,notumor,27a0f32ecb31a5c7221b31d4bcd5e1bf,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_283.jpg,test,notumor,3891725dec8d2288e221dc909bcbfead,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_317.jpg,test,notumor,99018718469d3b5bb5a349befb6fb9d4,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_320.jpg,test,notumor,882a67e16c64ce8b66ca667138537843,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_337.jpg,test,notumor,602189fef9334f61bdc31615b021d466,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_357.jpg,test,notumor,7b512ae15e893fbc4935f2631f052b8a,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_393.jpg,test,notumor,260e23c50bad1475349801b8fe6d7a74,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_66.jpg,test,notumor,98aec4f381b4d8c940d9f3a223312f88,near duplicate: duplicate
+dataset/Testing/notumor/Te-no_7.jpg,test,notumor,8358721eda6be5431b9c877bcc23861b,near duplicate: duplicate
