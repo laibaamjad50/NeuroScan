@@ -1,5 +1,27 @@
-flask>=3.0.0
-flask-cors>=4.0.0
-tensorflow>=2.15.0
-Pillow>=10.0.0
+# NeuroScan — Phase 1 (data cleaning, EDA, preprocessing)
+# Python 3.9+   ·   install with:  pip install -r requirements.txt
+# No models are trained in Phase 1, so no deep-learning framework is needed here.
+
+# Numerical & tabular
 numpy>=1.24.0
+pandas>=2.0.0
+
+# Plotting
+matplotlib>=3.7.0
+seaborn>=0.12.2
+
+# Statistics (Kruskal-Wallis, Kolmogorov-Smirnov, chi-square / Cramer's V)
+scipy>=1.10.0
+
+# Analysis utilities only: train/val split, PCA, mutual information, class weights
+scikit-learn>=1.3.0
+
+# Image loading, greyscale conversion, padding, resizing
+Pillow>=10.0.0
+
+# Progress bars during feature extraction and preprocessing
+tqdm>=4.65.0
+ipywidgets>=8.0.0   # required by tqdm.auto for progress bars inside Jupyter
+
+# Dataset download from Kaggle (needs kaggle.json — see README)
+kaggle>=1.6.0
