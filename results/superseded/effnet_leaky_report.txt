@@ -1,0 +1,16 @@
+effnet_leaky
+============
+samples            1600
+accuracy           0.7469
+balanced accuracy  0.7469
+macro F1           0.7440
+macro precision    0.7596
+macro recall       0.7469
+
+class             prec     rec      f1      n
+glioma          0.6576  0.6675  0.6625    400
+meningioma      0.6723  0.6975  0.6847    400
+notumor         0.7804  0.9775  0.8679    400
+pituitary       0.9281  0.6450  0.7611    400
+
+tumours called 'no tumour': 110 (9.17%)

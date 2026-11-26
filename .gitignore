@@ -2,3 +2,8 @@ kaggle.json
 processed_data/
 .ipynb_checkpoints/
 __pycache__/
+
+# Phase 2 trained models (~15-21 MB each). effnet_clean.keras is tracked
+# because Track 3 (Grad-CAM) needs it; the rest live on Drive.
+models/*.keras
+!models/effnet_clean.keras

@@ -1,0 +1,49 @@
+{
+  "headline": {
+    "clean_trained_clean_test": {
+      "accuracy": 0.8551372048500319,
+      "macro_f1": 0.850007941206889
+    },
+    "leaky_trained_leaky_test": {
+      "accuracy": 0.885,
+      "macro_f1": 0.881552519373049
+    },
+    "leaky_trained_clean_test": {
+      "accuracy": 0.8857689853222719,
+      "macro_f1": 0.882255358322063
+    },
+    "inflation_accuracy": 0.030631780472240022,
+    "inflation_macro_f1": 0.03224741711517398
+  },
+  "subset_analysis": {
+    "note": "accuracy only - the leaked subset has no pituitary and only 4 glioma, so macro-F1 over 4 classes is not meaningful there",
+    "n_leaked": 155,
+    "n_non_leaked": 1412,
+    "n_test": 1567,
+    "accuracy": {
+      "clean_trained": {
+        "leaked": 0.5419,
+        "non_leaked": 0.8895
+      },
+      "leaky_trained": {
+        "leaked": 0.8258,
+        "non_leaked": 0.8924
+      }
+    },
+    "gap_leaked": 0.28389999999999993,
+    "gap_non_leaked": 0.0029000000000000137
+  },
+  "decomposition": {
+    "leaked_contribution": 0.028082003828972555,
+    "non_leaked_contribution": 0.0026131461391193486,
+    "predicted_total_gap": 0.030695149968091903,
+    "observed_total_gap": 0.030631780472240022
+  },
+  "leaked_by_class": {
+    "meningioma": 98,
+    "notumor": 53,
+    "glioma": 4,
+    "pituitary": 0
+  },
+  "conclusion": "All of the leaky pipeline's apparent advantage comes from the 9.9% of test images it memorised; on the other 90.1% the two models are within 0.3 points."
+}

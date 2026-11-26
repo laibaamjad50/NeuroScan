@@ -1,0 +1,16 @@
+baseline_cnn
+============
+samples            1567
+accuracy           0.8060
+balanced accuracy  0.8052
+macro F1           0.7976
+macro precision    0.8304
+macro recall       0.8052
+
+class             prec     rec      f1      n
+glioma          0.9801  0.6423  0.7760    383
+meningioma      0.7767  0.5884  0.6695    396
+notumor         0.6867  1.0000  0.8143    388
+pituitary       0.8780  0.9900  0.9307    400
+
+tumours called 'no tumour': 177 (15.01%)
