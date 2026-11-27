@@ -1,0 +1,16 @@
+resnet50_tuned
+==============
+samples            1567
+accuracy           0.9068
+balanced accuracy  0.9065
+macro F1           0.9062
+macro precision    0.9185
+macro recall       0.9065
+
+class             prec     rec      f1      n
+glioma          0.9755  0.8329  0.8986    383
+meningioma      0.9578  0.8030  0.8736    396
+notumor         0.7886  1.0000  0.8818    388
+pituitary       0.9519  0.9900  0.9706    400
+
+tumours called 'no tumour': 104 (8.82%)

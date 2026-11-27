@@ -1,0 +1,35 @@
+{
+  "model": "resnet50 (ImageNet weights), Track 2 head, BatchNorm frozen during fine-tuning",
+  "final_config": {
+    "lr_head": 0.001,
+    "dropout": 0.3,
+    "ft_layers": 72,
+    "lr_ft": 3e-05
+  },
+  "seeds": [
+    42,
+    7
+  ],
+  "batch_size": 32,
+  "max_epochs": {
+    "head": 8,
+    "finetune": 8
+  },
+  "early_stopping_patience": 4,
+  "selection_metric": "validation macro-F1",
+  "tensorflow": "2.21.0",
+  "test_mean": {
+    "val_acc": 0.9697,
+    "val_macro_f1": 0.9699,
+    "test_acc": 0.9129,
+    "test_macro_f1": 0.9115,
+    "test_tumour_missed": 0.0649
+  },
+  "test_std": {
+    "val_acc": 0.002,
+    "val_macro_f1": 0.0017,
+    "test_acc": 0.0086,
+    "test_macro_f1": 0.0076,
+    "test_tumour_missed": 0.033
+  }
+}

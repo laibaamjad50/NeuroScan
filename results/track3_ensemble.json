@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "model": "effnet_tuned",
+      "val_macro_f1": 0.9346328690097645,
+      "test_acc": 0.8825781748564135,
+      "test_macro_f1": 0.8787926601320347,
+      "test_tumour_missed": 0.058524173027989825
+    },
+    {
+      "model": "resnet50_tuned",
+      "val_macro_f1": 0.9711192802313207,
+      "test_acc": 0.9068283343969368,
+      "test_macro_f1": 0.906156085008612,
+      "test_tumour_missed": 0.08821034775233248
+    },
+    {
+      "model": "ensemble (mean)",
+      "val_macro_f1": 0.9702381094209551,
+      "test_acc": 0.9068283343969368,
+      "test_macro_f1": 0.9057980618899202,
+      "test_tumour_missed": 0.08396946564885496
+    }
+  ],
+  "test_metrics": {
+    "n_samples": 1567,
+    "accuracy": 0.9068283343969368,
+    "balanced_accuracy": 0.9064694925758895,
+    "macro_precision": 0.9178538286806572,
+    "macro_recall": 0.9064694925758895,
+    "macro_f1": 0.9057980618899202,
+    "weighted_f1": 0.9061082708486498,
+    "per_class": {
+      "glioma": {
+        "precision": 0.9755351681957186,
+        "recall": 0.8328981723237598,
+        "f1": 0.8985915492957747,
+        "support": 383
+      },
+      "meningioma": {
+        "precision": 0.9604863221884499,
+        "recall": 0.797979797979798,
+        "f1": 0.8717241379310345,
+        "support": 396
+      },
+      "notumor": {
+        "precision": 0.7967145790554415,
+        "recall": 1.0,
+        "f1": 0.8868571428571429,
+        "support": 388
+      },
+      "pituitary": {
+        "precision": 0.9386792452830188,
+        "recall": 0.995,
+        "f1": 0.9660194174757282,
+        "support": 400
+      }
+    },
+    "confusion_matrix": [
+      [
+        319,
+        11,
+        48,
+        5
+      ],
+      [
+        8,
+        316,
+        51,
+        21
+      ],
+      [
+        0,
+        0,
+        388,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        398
+      ]
+    ],
+    "class_names": [
+      "glioma",
+      "meningioma",
+      "notumor",
+      "pituitary"
+    ],
+    "tumour_missed_as_notumor": 99,
+    "tumour_missed_rate": 0.08396946564885496,
+    "macro_roc_auc": 0.9859684740905638,
+    "mean_confidence": 0.9274252439161433
+  }
+}
