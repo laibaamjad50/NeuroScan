@@ -2,7 +2,7 @@
 
 **Group:** Kainat Asghar (23L-0687) | Laiba Amjad (23L-0642) | Mania Ali (23L-0876)
 **Course:** DataScience · FAST-NUCES, Lahore
-**Current status:** Phase 1 complete (data cleaning, EDA, insights, preprocessing). Phase 2 (modelling) in progress — Track 1 done; see [Phase 2 — Modelling](#phase-2--modelling) and [PHASE2.md](PHASE2.md).
+**Current status:** Phase 1 complete (data cleaning, EDA, insights, preprocessing). Phase 2 (modelling): Tracks 1 and 2 done, Track 3 in progress; see [Phase 2 — Modelling](#phase-2--modelling) and [PHASE2.md](PHASE2.md).
 
 ---
 
@@ -66,6 +66,7 @@ Committed to this repository:
 .
 ├── Brain_Tumor_MRI_Phase1.ipynb   ← Phase 1 notebook (cleaning, EDA, preprocessing), outputs included
 ├── Phase2_Track1_Kainat.ipynb     ← Phase 2 Track 1 (baseline CNN + leakage experiment)
+├── Phase2_Track2_Laiba.ipynb      ← Phase 2 Track 2 (tuned EfficientNetB0: tuning grid, 2-seed final run, error analysis)
 ├── README.md
 ├── PHASE2.md                      ← Phase 2 contract: split, seed, preprocessing, track owners
 ├── requirements.txt               ← Python dependencies for Phase 1
@@ -87,11 +88,13 @@ Committed to this repository:
 │   ├── 01_*.png … 16_*.png       ← the 16 EDA figures
 │   └── README.md                  ← a short note on what each figure tells us
 ├── models/
-│   └── effnet_clean.keras         ← the clean-data EfficientNetB0 (Track 3 runs Grad-CAM on it)
+│   ├── effnet_clean.keras         ← the clean-data EfficientNetB0 (Track 3 runs Grad-CAM on it)
+│   └── effnet_tuned.keras         ← Track 2's final tuned EfficientNetB0 (18 MB)
 └── results/
     ├── comparison.{csv,md}        ← every model's scores side by side
     ├── leakage_experiment.json    ← the leakage numbers and their decomposition
     ├── *_metrics.json / *_report.txt / *_confusion.png
+    ├── track2_*.csv / track2_*.png ← Track 2 tuning runs, seeds, comparison and error-analysis plots
     └── superseded/                ← the first evaluation pass, with a README explaining why
 ```
 
@@ -126,7 +129,7 @@ The work is split three ways (the contract, and who owns what, is in [PHASE2.md]
 | Track | Owner | Status |
 |---|---|---|
 | 1 | Kainat | Shared pipeline, baseline CNN, leakage experiment — **done** |
-| 2 | Laiba | EfficientNetB0 transfer learning — in progress |
+| 2 | Laiba | EfficientNetB0 transfer learning with working fine-tuning, tuning grid, 2-seed evaluation — **done** |
 | 3 | Mania | Second backbone, Grad-CAM, error analysis — in progress |
 
 All models load through `neuroscan/data.py` and are scored by `neuroscan/evaluate.py`, so
@@ -137,8 +140,14 @@ results are comparable. Full results are in [`results/`](results/); the Track 1 
 
 | Model | Accuracy | Macro-F1 | Tumours called "no tumour" |
 |-------|----------|----------|------|
-| EfficientNetB0 (clean data) | 0.8551 | 0.8500 | 5.6% |
+| EfficientNetB0, tuned (Track 2, seed 42) | 0.8826 | 0.8788 | 5.9% |
+| EfficientNetB0 (Track 1, clean data) | 0.8551 | 0.8500 | 5.6% |
 | CNN from scratch (baseline) | 0.8060 | 0.7976 | 15.0% |
+
+The tuned model's second seed scored 0.8545 accuracy / 0.8479 macro-F1, so its two-seed mean is
+0.8685 ± 0.0199 accuracy. The improvement over Track 1 is therefore **within seed-to-seed variation**
+(details in [Track 2](#track-2--tuned-efficientnetb0)). The full Track 2 comparison, including AUC,
+is in [`results/track2_comparison.md`](results/track2_comparison.md).
 
 Transfer learning is worth about 5 points of accuracy here — and, more importantly, cuts the
 clinically expensive error (a tumour predicted as "no tumour") from 15.0% to 5.6%. Accuracy
@@ -183,7 +192,90 @@ spread: 24.7% of the meningioma test set is compromised against 0% of pituitary.
 ships augmented meningioma images (`Tr-aug-me_*`), and augmenting before splitting puts
 near-copies of one scan on both sides — an argument for de-duplicating *before* the split.
 
-### Known issue: fine-tuning
+### Track 2 — tuned EfficientNetB0
+
+Notebook: [`Phase2_Track2_Laiba.ipynb`](Phase2_Track2_Laiba.ipynb) · model: [`models/effnet_tuned.keras`](models/effnet_tuned.keras)
+
+**Method.** EfficientNetB0 (ImageNet weights) → global average pooling → dropout → Dense(256) → dropout →
+Dense(4, softmax), trained through the shared pipeline (same split, seed, augmentation and metrics as
+every other track). The fine-tuning bug from Track 1 is fixed in three ways: the base is called with
+`training=False`, every BatchNorm layer stays frozen after unfreezing, and the head's weights are saved
+and restored if fine-tuning does not improve validation macro-F1. **All choices were made on validation
+macro-F1; the test set was used once, for the final report.**
+
+**Experiment 1 — head training (backbone frozen).**
+
+| Head learning rate | Dropout | Validation macro-F1 |
+|---|---|---|
+| 1e-3 | 0.3 | **0.8867** |
+| 1e-3 | 0.5 | 0.8849 |
+| 3e-4 | 0.3 | 0.8642 |
+| 3e-4 | 0.5 | 0.8236 |
+
+The higher learning rate wins clearly. Dropout 0.3 versus 0.5 is a tie.
+
+**Experiment 2 — fine-tuning** (from the best head, validation macro-F1 0.8867; unfrozen layers at the top of the base × fine-tuning learning rate; BatchNorm always frozen):
+
+| Unfrozen layers | lr 1e-5 | lr 3e-5 |
+|---|---|---|
+| 20 | 0.8777 | 0.9157 |
+| 50 | 0.8989 | 0.9149 |
+| 100 | 0.8971 | **0.9256** |
+
+![Experiment 2](results/track2_exp2_finetune.png)
+
+Fine-tuning works now: the best run improves on head-only training by 3.9 points, where Track 1's fine-tune
+lost 16. The learning rate of 3e-5 beat 1e-5 at every depth. The three depths at 3e-5 are within about one
+point of each other, which is likely a tie; the notebook picks the highest validation score (100 layers).
+Each run in this grid was capped at 6 epochs, and the 1e-5 runs were still improving at the cap.
+
+**Experiment 3 — augmentation ablation (information only).** Training the best head without augmentation gave
+a *higher* validation macro-F1 (0.9602) than with it (0.8867). We did **not** adopt this: the project contract
+keeps augmentation on, the validation split comes from the same folder as the training data (Phase 1 found the
+test set differs from it), and the no-augmentation model was never evaluated on the test set. So validation
+alone cannot say whether it would generalise better. This is an open question, not a result.
+
+**Final model.** Configuration: head learning rate 1e-3, dropout 0.3, top 100 layers unfrozen, fine-tuning
+learning rate 3e-5, batch size 32, early stopping (patience 4) with up to 8 head epochs and 8 fine-tuning epochs.
+Retrained with two seeds:
+
+| Seed | Val accuracy | Val macro-F1 | Test accuracy | Test macro-F1 | Tumours called "no tumour" |
+|---|---|---|---|---|---|
+| 42 (saved model) | 0.9355 | 0.9346 | 0.8826 | 0.8788 | 5.9% |
+| 7 | 0.9269 | 0.9249 | 0.8545 | 0.8479 | 7.0% |
+| **Mean ± std** | 0.9312 ± 0.0061 | 0.9298 ± 0.0069 | **0.8685 ± 0.0199** | **0.8634 ± 0.0218** | 6.5% ± 0.8 |
+
+Per-class results for the saved model (test set, 1,567 images):
+
+| Class | Precision | Recall | F1 |
+|---|---|---|---|
+| Glioma | 0.928 | 0.812 | 0.866 |
+| Meningioma | 0.929 | 0.722 | 0.813 |
+| No tumor | 0.848 | 0.995 | 0.916 |
+| Pituitary | 0.853 | 1.000 | 0.921 |
+
+![Confusion matrix](results/effnet_tuned_confusion.png)
+
+![Model comparison](results/track2_model_comparison.png)
+
+**What the results mean**
+
+- **Transfer learning with tuned fine-tuning clearly beats a CNN from scratch:** about +6 points of mean test accuracy (0.8685 vs 0.8060).
+- **It is not reliably better than Track 1's EfficientNet.** Seed 42 beats Track 1's 0.8551 by 2.7 points, but seed 7 scores 0.8545, the same as Track 1. The two-seed mean is only about 1.3 points above Track 1, smaller than the 2-point spread between seeds, and two seeds are too few for a significance test. We can say the tuned model is no worse and often better, not that it is proven better.
+- **Missed tumours did not improve.** 5.9% (seed 42) and 6.5% on average, against 5.6% for Track 1. Tuning raised accuracy without reducing this clinically important error.
+- **Where it fails.** Meningioma is the weakest class (recall 72%): of 396 test images, 53 are called pituitary, 34 "no tumour" and 23 glioma. Glioma recall is 81% (35 called "no tumour", 21 meningioma, 16 pituitary). Pituitary recall is perfect, but precision is only 0.853 because the model over-predicts it (469 predictions against 400 true images), and "no tumour" is over-predicted too (455 against 388). The model's errors lean toward those two labels.
+- **Validation is optimistic.** Mean validation macro-F1 is 0.930 against 0.863 on the test set, a gap of about 6.6 points, in line with the train/test shift Phase 1 found. The test figures are the ones to quote.
+
+**Limitations**
+
+- Only **two seeds** and reduced epoch caps (8 + 8) because of limited Colab compute; the tuning grid was also small (4 head settings, 6 fine-tuning settings).
+- **No k-fold cross-validation.** The split is fixed by the project contract: re-splitting could put near-duplicates on both sides again, which is exactly the leakage Phase 1 removed.
+- The tuning runs were capped at 6 epochs while the final model used up to 8, so the chosen setting was tested slightly more briefly than it was finally trained.
+- The augmentation question (Experiment 3) is unresolved, and whether the model relies on image size instead of the tumour is not tested here (Track 3's Grad-CAM addresses that).
+
+**Possible improvements:** more seeds or an ensemble of seeds, longer fine-tuning with a learning-rate schedule, a larger backbone, test-time augmentation, evaluating the no-augmentation variant on the test set, and removing horizontal flip.
+
+### Known issue: fine-tuning (fixed in Track 2)
 
 Both EfficientNet runs were initially scored on damaged weights. Unfreezing the base put every
 BatchNormalization layer into training mode, which collapsed validation accuracy from 0.9355 to
@@ -191,11 +283,13 @@ BatchNormalization layer into training mode, which collapsed validation accuracy
 it restored a phase-B epoch rather than phase A's best. Reloading the `ModelCheckpoint` recovered
 16 points. Section 5 of the Track 1 notebook documents it; keep BatchNorm frozen when fine-tuning.
 
+**Fixed in Track 2:** BatchNorm layers stay frozen, the base runs in inference mode, and fine-tuning is rolled back if it does not help validation. Fine-tuning now improves the model instead of damaging it (see [Track 2](#track-2--tuned-efficientnetb0)).
+
 ### Still to do
 
-Tracks 2 and 3: tune EfficientNetB0 with working fine-tuning, add a second backbone for
-comparison, and run Grad-CAM to confirm the model attends to the tumour rather than to image
-dimensions — Phase 1 found resolution correlates with class at Cramér's V = 0.52.
+- **Track 3 (Mania):** a second backbone for comparison, and Grad-CAM to confirm the model attends to the tumour rather than to image dimensions. Phase 1 found resolution correlates with class at Cramér's V = 0.52, and nothing in Tracks 1–2 tests for it.
+- **Final comparison across all three tracks** (`evaluate.comparison_table`) and the project conclusion.
+- **Web app and deployment**, with the live link added here.
 
 ---
 
