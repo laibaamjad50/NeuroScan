@@ -285,9 +285,68 @@ it restored a phase-B epoch rather than phase A's best. Reloading the `ModelChec
 
 **Fixed in Track 2:** BatchNorm layers stay frozen, the base runs in inference mode, and fine-tuning is rolled back if it does not help validation. Fine-tuning now improves the model instead of damaging it (see [Track 2](#track-2--tuned-efficientnetb0)).
 
-### Still to do
 
-- **Track 3 (Mania):** a second backbone for comparison, and Grad-CAM to confirm the model attends to the tumour rather than to image dimensions. Phase 1 found resolution correlates with class at Cramér's V = 0.52, and nothing in Tracks 1–2 tests for it.
+
+
+### Track 3 — ResNet50, Grad-CAM and the resolution shortcut
+
+Notebook: [`Phase2_Track3_Mania.ipynb`](Phase2_Track3_Mania.ipynb) · model: `models/resnet50_tuned.keras` (≈100 MB, kept on Drive and not committed)
+
+**Method.** ResNet50 (ImageNet weights) with exactly Track 2's head and BatchNorm fix, trained through the shared pipeline
+(`preprocess="resnet50"`). Tuning used validation macro-F1 only: head learning rate {1e-3, 3e-4}, then unfreezing {32, 72} layers × fine-tuning
+learning rate {1e-5, 3e-5}. The winner was retrained with seeds 42 and 7, as in Track 2.
+
+**Final configuration:** [head lr, unfrozen layers, fine-tuning lr], validation macro-F1 [ ].
+
+| Model | Test accuracy (mean ± std) | Test macro-F1 (mean ± std) | Tumours called "no tumour" |
+|---|---|---|---|
+| ResNet50, tuned (Track 3) | [ ] ± [ ] | [ ] ± [ ] | [ ]% |
+| EfficientNetB0, tuned (Track 2) | 0.8685 ± 0.0199 | 0.8634 ± 0.0218 | 6.5% |
+| Ensemble (mean of the two; seed 42 models) | [ ] | [ ] | [ ]% |
+
+[One or two sentences: is the ResNet50 vs EfficientNet difference larger than the ~2-point seed spread? Did the ensemble help on validation *and* test?]
+
+![Comparison](results/track3_model_comparison.png)
+
+**Does the model look at the tumour or at the image format?** Phase 1 found resolution almost gives away the class (Cramér's V = 0.52), and
+padding non-square images to a square leaves black bands. We tested this three ways.
+
+1. *Grad-CAM, measured over all 1,567 test images.* Share of Grad-CAM attention divided by share of image area (below 1 = the model avoids the region):
+
+   | Model | Padding (padded images) | Background (all images) |
+   |---|---|---|
+   | ResNet50 | [ ] | [ ] |
+   | EfficientNetB0 (Track 2) | [ ] | [ ] |
+   | EfficientNetB0 (Track 1) | [ ] | [ ] |
+
+   ![Grad-CAM examples](results/track3_gradcam_examples.png)
+
+2. *Accuracy by original format.* Tumours called "no tumour": [ ]% of 512×512 tumour images against [ ]% of other sizes (n = 993 vs 186,
+   Fisher p = [ ]) for [model]. [Interpretation. Note that format and source are confounded here.]
+
+3. *Counterfactual.* The same 993 tumour scans, rebuilt with only their size or padding changed:
+
+   | Variant | ResNet50: called "no tumour" | EfficientNet: called "no tumour" |
+   |---|---|---|
+   | original | [ ]% | [ ]% |
+   | downscaled to 225×225 | [ ]% | [ ]% |
+   | letterboxed (80% of frame) | [ ]% | [ ]% |
+   | both | [ ]% | [ ]% |
+
+   ![Counterfactual](results/track3_counterfactual.png)
+
+**Verdict:** [no / some / strong] evidence that the models use image size or padding instead of the anatomy, because [ ].
+
+**Error analysis.** [Main confusions for ResNet50.] Of the errors, [ ] are shared with Track 2's EfficientNet, meaning two different
+architectures fail on the same images, which points at the images rather than the model. Error rates are notably higher for [property: e.g. low-contrast
+images / non-512 originals / Phase 1 outliers] ([ ]% vs [ ]%). Grad-CAM on meningioma → pituitary errors shows [ ].
+
+![Tumours called no tumour](results/track3_errors_tumour_as_notumor.png)
+
+**Limitations.** Two seeds and a small grid; Grad-CAM at 7×7 is coarse; the format analysis is observational (the counterfactual controls for
+that, but only one way: no test "no tumour" image is 512×512 except 3); no k-fold cross-validation, because the split is fixed to keep leakage out.
+
+### Still to do
 - **Final comparison across all three tracks** (`evaluate.comparison_table`) and the project conclusion.
 - **Web app and deployment**, with the live link added here.
 
