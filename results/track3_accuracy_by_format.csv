@@ -1,0 +1,13 @@
+model,group,n,accuracy,called_notumor
+resnet50_tuned,"tumour, native 512x512",993,0.9687814702920443,0.0030211480362537764
+resnet50_tuned,"tumour, other size",186,0.3817204301075269,0.543010752688172
+resnet50_tuned,"no tumour, padded",265,1.0,1.0
+resnet50_tuned,"no tumour, square",123,1.0,1.0
+effnet_tuned,"tumour, native 512x512",993,0.9264853977844915,0.0010070493454179255
+effnet_tuned,"tumour, other size",186,0.41397849462365593,0.3655913978494624
+effnet_tuned,"no tumour, padded",265,0.9962264150943396,0.9962264150943396
+effnet_tuned,"no tumour, square",123,0.991869918699187,0.991869918699187
+effnet_clean,"tumour, native 512x512",993,0.9083585095669687,0.0010070493454179255
+effnet_clean,"tumour, other size",186,0.2956989247311828,0.34946236559139787
+effnet_clean,"no tumour, padded",265,0.9886792452830189,0.9886792452830189
+effnet_clean,"no tumour, square",123,0.983739837398374,0.983739837398374
