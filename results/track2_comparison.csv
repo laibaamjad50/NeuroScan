@@ -1,0 +1,4 @@
+model,n,accuracy,balanced_acc,macro_f1,macro_recall,macro_auc,tumour_missed
+effnet_tuned,1567,0.8826,0.8823,0.8788,0.8823,0.9811,0.0585
+effnet_clean_best,1567,0.8551,0.8544,0.85,0.8544,0.9711,0.056
+baseline_cnn,1567,0.806,0.8052,0.7976,0.8052,0.9336,0.1501
