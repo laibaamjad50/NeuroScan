@@ -1,0 +1,16 @@
+effnet_tuned
+============
+samples            1567
+accuracy           0.8826
+balanced accuracy  0.8823
+macro F1           0.8788
+macro precision    0.8895
+macro recall       0.8823
+
+class             prec     rec      f1      n
+glioma          0.9284  0.8120  0.8663    383
+meningioma      0.9286  0.7222  0.8125    396
+notumor         0.8484  0.9948  0.9158    388
+pituitary       0.8529  1.0000  0.9206    400
+
+tumours called 'no tumour': 69 (5.85%)

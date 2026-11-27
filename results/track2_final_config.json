@@ -1,0 +1,35 @@
+{
+  "model": "EfficientNetB0 (ImageNet weights), BatchNorm frozen during fine-tuning",
+  "final_config": {
+    "lr_head": 0.001,
+    "dropout": 0.3,
+    "ft_layers": 100,
+    "lr_ft": 3e-05
+  },
+  "seeds": [
+    42,
+    7
+  ],
+  "batch_size": 32,
+  "max_epochs": {
+    "head": 8,
+    "finetune": 8
+  },
+  "early_stopping_patience": 4,
+  "selection_metric": "validation macro-F1",
+  "tensorflow": "2.21.0",
+  "test_mean": {
+    "val_acc": 0.9312,
+    "val_macro_f1": 0.9298,
+    "test_acc": 0.8685,
+    "test_macro_f1": 0.8634,
+    "test_tumour_missed": 0.0645
+  },
+  "test_std": {
+    "val_acc": 0.0061,
+    "val_macro_f1": 0.0069,
+    "test_acc": 0.0199,
+    "test_macro_f1": 0.0218,
+    "test_tumour_missed": 0.0084
+  }
+}
