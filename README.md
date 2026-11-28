@@ -84,6 +84,9 @@ Committed to this repository:
 │   └── evaluate.py                ← one metric set for every model
 ├── scripts/
 │   └── build_processed_data.py    ← rebuilds processed_data/ from the manifest
+├── backend/                       ← web app: Flask API (app.py), inference + Grad-CAM, parity check
+├── frontend/
+│   └── index.html                 ← web app UI (served by the backend at /)
 ├── images/
 │   ├── 01_*.png … 16_*.png       ← the 16 EDA figures
 │   └── README.md                  ← a short note on what each figure tells us
@@ -348,7 +351,59 @@ that, but only one way: no test "no tumour" image is 512×512 except 3); no k-fo
 
 ### Still to do
 - **Final comparison across all three tracks** (`evaluate.comparison_table`) and the project conclusion.
-- **Web app and deployment**, with the live link added here.
+- **Deployment** of the web app below, with the live link added here.
+
+## Web App (Phase 3)
+
+A Flask backend (`backend/`) serves the model and a single-page frontend (`frontend/index.html`).
+Upload an MRI slice and it shows the predicted class, all four probabilities, the exact 224×224
+image the model saw, and a Grad-CAM heatmap (Track 3's implementation).
+
+```bash
+pip install -r backend/requirements.txt
+python backend/app.py            # then open http://localhost:5000
+```
+
+| Setting | Default | Notes |
+|---|---|---|
+| `MODEL_PATH` | `models/effnet_tuned.keras` | Track 2's model, the only tuned model in the repo. For Track 3's ResNet50, download `resnet50_tuned.keras` from Drive into `models/` and point this at it |
+| `MODEL_PREPROCESS` | guessed from the file name | `efficientnet`, `resnet50`, `mobilenetv2` or `rescale` |
+| `NOTUMOR_THRESHOLD` | from `backend/decision_rule.json` (0.9) | see below; re-run `choose_threshold.py` after changing model |
+| `HOST`, `PORT` | `127.0.0.1`, `5000` | |
+
+**The app preprocesses uploads exactly as training did** (greyscale → pad to square → 224×224 LANCZOS →
+backbone preprocessing). `python backend/check_backend.py` proves it: it rebuilds every test image from
+`dataset/` through the app's code, checks each against `processed_data/` pixel for pixel, and re-scores the
+test set to confirm the accuracy in `results/<model>_metrics.json`.
+
+**The app is slower to say "no tumour" than the raw model.** Track 3 found that tumour scans not sized
+512×512 are often called "no tumour" (`results/track3_accuracy_by_format.csv`). The cause is the data, not
+the image size itself. The training set contains no non-512 gliomas and only 23 non-512 meningiomas, while
+nearly all "no tumour" scans are non-512. These scans come from a different source and are brighter, so the
+model partly learned "looks like that source → no tumour". The validation split, with only 18 such tumours,
+could not reveal this. The test split, with 186, does.
+
+As a partial fix that needs no retraining, the app reports "no tumour" only when the model is at least
+**90%** sure, and otherwise reports the most likely tumour class. The threshold was chosen on the
+**validation set**: the strictest of 0.5–0.99 that flags at most 5% of healthy scans
+(`python backend/choose_threshold.py` → `backend/decision_rule.json`). The test set was scored once, afterwards:
+
+| Effect on the test set (EfficientNetB0, tuned) | Plain model | App (90% rule) |
+|---|---|---|
+| Accuracy / macro-F1 | 0.8826 / 0.8788 | 0.8890 / 0.8862 |
+| Tumours called "no tumour" | 5.9% | **3.3%** |
+| … of tumour scans not 512×512 | 36.6% | 21.0% |
+| Healthy scans flagged as tumour | 0.5% | 2.1% |
+
+When the rule changes an answer, the app shows **"Possible Tumour"** and gives the likely type only as a hint.
+On the test set the rule changed 36 answers. 30 were tumours, but the type was right for only 16 of them.
+A "No Tumour" answer for a non-512 scan is still wrong about 1 time in 11, so the app shows a warning on those
+answers. The real fix needs retraining: non-512 tumour scans in the training data, and per-image intensity
+normalisation to remove the brightness cue. That would change the Phase 2 contract, so it is listed as future work.
+`NOTUMOR_THRESHOLD=0.5` turns the rule off.
+
+API: `GET /health` returns the model's name and test metrics. `POST /predict` takes `multipart/form-data`
+with field `file`, and `?gradcam=0` skips the heatmap.
 
 ---
 
