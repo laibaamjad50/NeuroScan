@@ -7,3 +7,6 @@ __pycache__/
 # because Track 3 (Grad-CAM) needs it; the rest live on Drive.
 models/*.keras
 !models/effnet_clean.keras
+
+# Local virtual environment (web app / backend)
+.venv/

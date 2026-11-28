@@ -1,0 +1,94 @@
+{
+  "model": "effnet_tuned",
+  "threshold": 0.9,
+  "rule": "say 'no tumour' only if P(no tumour) >= threshold, else the most likely tumour class",
+  "selection": "strictest threshold in [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99] with healthy validation scans flagged <= 5%; test set not used for the choice",
+  "validation": {
+    "0.5": {
+      "accuracy": 0.9355,
+      "macro_f1": 0.9346,
+      "tumours_missed": 0.0037,
+      "non512_tumours_missed": 0.1667,
+      "healthy_flagged": 0.0087,
+      "non512_notumor_wrong": 0.013,
+      "n": 1039
+    },
+    "0.6": {
+      "accuracy": 0.9365,
+      "macro_f1": 0.9358,
+      "tumours_missed": 0.0025,
+      "non512_tumours_missed": 0.1111,
+      "healthy_flagged": 0.0087,
+      "non512_notumor_wrong": 0.0087,
+      "n": 1039
+    },
+    "0.7": {
+      "accuracy": 0.9374,
+      "macro_f1": 0.9369,
+      "tumours_missed": 0.0012,
+      "non512_tumours_missed": 0.0556,
+      "healthy_flagged": 0.0087,
+      "non512_notumor_wrong": 0.0044,
+      "n": 1039
+    },
+    "0.8": {
+      "accuracy": 0.9346,
+      "macro_f1": 0.9339,
+      "tumours_missed": 0.0012,
+      "non512_tumours_missed": 0.0556,
+      "healthy_flagged": 0.0216,
+      "non512_notumor_wrong": 0.0044,
+      "n": 1039
+    },
+    "0.9": {
+      "accuracy": 0.9326,
+      "macro_f1": 0.932,
+      "tumours_missed": 0.0012,
+      "non512_tumours_missed": 0.0556,
+      "healthy_flagged": 0.0303,
+      "non512_notumor_wrong": 0.0045,
+      "n": 1039
+    },
+    "0.95": {
+      "accuracy": 0.9278,
+      "macro_f1": 0.927,
+      "tumours_missed": 0.0012,
+      "non512_tumours_missed": 0.0556,
+      "healthy_flagged": 0.0519,
+      "non512_notumor_wrong": 0.0046,
+      "n": 1039
+    },
+    "0.99": {
+      "accuracy": 0.9124,
+      "macro_f1": 0.911,
+      "tumours_missed": 0.0012,
+      "non512_tumours_missed": 0.0556,
+      "healthy_flagged": 0.1212,
+      "non512_notumor_wrong": 0.0049,
+      "n": 1039
+    }
+  },
+  "test_plain": {
+    "accuracy": 0.8826,
+    "macro_f1": 0.8788,
+    "tumours_missed": 0.0585,
+    "non512_tumours_missed": 0.3656,
+    "healthy_flagged": 0.0052,
+    "non512_notumor_wrong": 0.1508,
+    "n": 1567
+  },
+  "test_with_rule": {
+    "accuracy": 0.889,
+    "macro_f1": 0.8862,
+    "tumours_missed": 0.0331,
+    "non512_tumours_missed": 0.2097,
+    "healthy_flagged": 0.0206,
+    "non512_notumor_wrong": 0.0938,
+    "n": 1567,
+    "rule_fired": {
+      "n": 36,
+      "actually_tumour": 30,
+      "type_right": 16
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# NeuroScan web app backend. Install from the repository root:
+#   pip install -r backend/requirements.txt
+# The models were saved with TensorFlow 2.21 / Keras 3; older 2.x may not load them.
+tensorflow>=2.16,<3
+flask>=3.0
+flask-cors>=4.0
+Pillow>=10.0
+numpy>=1.24,<3
